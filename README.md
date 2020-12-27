@@ -18,3 +18,22 @@ infection is θ ∈ (0, 1) hence, λ = κθ is the effective contact rate.
 - The duration of the infectious state is an exponential random variable with parameter
 µ > 0, that is, µ is the recovery rate.
 
+Under these assumptions we can show that for i > 0
+Pr(I(t + ∆t) = i + 1| I(t) = i) = λiN − i
+N
+∆t + O(∆t)
+Pr(I(t + ∆t) = i − 1| I(t) = i) = µi∆t + O(∆t)
+So that {I(t) : t > 0} is a continuous-time Markov chain. We are interested in analyzing the
+SIS epidemic as a function of ρ =
+λ
+µ
+. Note that the disease free state is a recurrent class and
+can be reached with positive probability from every state. When ρ =
+λ
+µ
+> 1 the disease will be
+in an endemic state for a while so we would like to study the behavior of the process previous
+to end of pandemic. To that end, let us define the quasi- steady state distribution as
+qj = lim
+t→∞
+Pr(I(t) = j| I(t) > 0)
